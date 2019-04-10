@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="485.0" prefWidth="401.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Arikli">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="unosArtikla" layoutX="22.0" layoutY="28.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextArea fx:id="ispisArtikla" layoutX="22.0" layoutY="242.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Button layoutX="279.0" layoutY="151.0" mnemonicParsing="false" onAction="#ispisi" text="Dodaj Artikle" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Racun">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox layoutX="101.0" layoutY="22.0" prefWidth="150.0" />
+                        <Label layoutX="14.0" layoutY="26.0" text="Artikal:" />
+                        <Label layoutX="13.0" layoutY="96.0" prefHeight="17.0" prefWidth="50.0" text="Kolicina:" />
+                        <Spinner layoutX="102.0" layoutY="92.0" />
+                        <Button fx:id="dodaj" layoutX="102.0" layoutY="145.0" mnemonicParsing="false" text="Dodaj" />
+                        <TextArea layoutX="101.0" layoutY="177.0" prefHeight="187.0" prefWidth="173.0" />
+                        <Label layoutX="12.0" layoutY="262.0" text="Aktuelni racun:" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
